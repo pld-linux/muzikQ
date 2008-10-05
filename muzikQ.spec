@@ -3,7 +3,7 @@ Summary(hu.UTF-8):	muzikQ egy curses/SDL_mixer alapú audió lejátszó
 Summary(pl.UTF-8):	odtwarzacz plików audio oparty o curses/SDL_mixer
 Name:		muzikQ
 Version:	0.3
-Release:	1
+Release:	2
 License:	GPL v3
 Group:		Applications/Sound
 Source0:	http://dl.sourceforge.net/muzikq/%{name}-%{version}.tar.gz
@@ -54,5 +54,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog NEWS README muzikQ.conf muzikQ.txt
+%doc AUTHORS ChangeLog NEWS README muzikQ.conf muzikQ.txt changes-%{version}.txt
 %attr(755,root,root) %{_bindir}/muzikQ
