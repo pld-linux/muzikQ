@@ -2,12 +2,12 @@ Summary:	muzikQ is a curses/SDL_mixer based audio player
 Summary(hu.UTF-8):	muzikQ egy curses/SDL_mixer alapú audió lejátszó
 Summary(pl.UTF-8):	odtwarzacz plików audio oparty o curses/SDL_mixer
 Name:		muzikQ
-Version:	0.2
+Version:	0.3
 Release:	1
 License:	GPL v3
 Group:		Applications/Sound
 Source0:	http://dl.sourceforge.net/muzikq/%{name}-%{version}.tar.gz
-# Source0-md5:	bbb357b6260929a7c7124661ed296557
+# Source0-md5:	0eff1d971048da92271bbffab9f52272
 URL:		http://sourceforge.net/projects/muzikq/
 BuildRequires:	SDL_mixer-devel
 BuildRequires:	libvorbis-devel
