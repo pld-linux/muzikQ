@@ -3,7 +3,7 @@ Summary(hu.UTF-8):	muzikQ egy curses/SDL_mixer alapú audió lejátszó
 Summary(pl.UTF-8):	odtwarzacz plików audio oparty o curses/SDL_mixer
 Name:		muzikQ
 Version:	0.2
-Release:	0.1
+Release:	1
 License:	GPL v3
 Group:		Applications/Sound
 Source0:	http://dl.sourceforge.net/muzikq/%{name}-%{version}.tar.gz
@@ -22,15 +22,15 @@ mp3 & ogg, has features such as song rating, playlists, ssh and telnet
 control.
 
 %description -l hu.UTF-8
-muzikQ egy curses/SDL_mixer alapú audió lejátszó, jelenleg mp3 és
-ogg formátumokat támogat. A lehetőségei között zene
-osztályozása, számlisták, ssh és telnet irányítás van.
+muzikQ egy curses/SDL_mixer alapú audió lejátszó, jelenleg mp3 és ogg
+formátumokat támogat. A lehetőségei között zene osztályozása,
+számlisták, ssh és telnet irányítás van.
 
 %description -l pl.UTF-8
 muzikQ jest konsolowym odtwarzaczem plików audio wykorzystującym
-curses i SDL_mixer. Obecnie obsługuje on formaty mp3 i ogg. Pozwala
-na tworzenie playlist oraz przypisywanie utoworom "rangi" decydującej
-o prawdopodobieństwie wylosowania danego pliku.
+curses i SDL_mixer. Obecnie obsługuje on formaty mp3 i ogg. Pozwala na
+tworzenie playlist oraz przypisywanie utoworom "rangi" decydującej o
+prawdopodobieństwie wylosowania danego pliku.
 
 %prep
 %setup -q
@@ -41,10 +41,9 @@ o prawdopodobieństwie wylosowania danego pliku.
 %{__autoconf}
 %{__automake}
 %configure \
-	CPPFLAGS="-I/usr/include/ncursesw" \
-	 \
+	CPPFLAGS="-I/usr/include/ncursesw"
 
-%{__make} DESTDIR=$RPM_BUILD_ROOT
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
